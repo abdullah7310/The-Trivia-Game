@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(249, 199, 123);
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+    width: 60vw;
+    height: 80vh;
+    border: 2px dashed black;
+    background-color: rgb(251, 240, 194);
+
+    h3{
+        text-align: center;  
+    }
+    h2{
+        text-align: center;
+        color: rgb(17, 41, 219);
+        font-weight: 500;
+    }
+
+    .category-heading{
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: bisque;
+        width: 60%;
+        border: 1px solid black;
+    }
+    .category-heading:hover{
+        background-color: rgb(252, 216, 169);
+    }
+    .quesHeading{
+        height: 15px;
+        margin: auto;
+        font-size: 15px ;
+        font-weight: bold;
+        width: 50%;
+        margin-bottom: 5px;
+        /* border: 2px solid black; */
+    }
+
+    .questionDiv{
+        height: 99%;
+        width: 99%;
+        /* border: 2px solid purple; */
+        display: flex;
+        justify-content: space-between;
+
+        .optionBtn{
+            /* display: block; */
+            width: 90%;
+            margin-bottom: 5px;
+        }
+    }
+
+    .divForNames{
+        width: 30%;
+        height: 40%;
+        border: 2px dotted rgb(35, 80, 177);
+        background-color: rgb(245, 224, 119);
+    }
+    .divForQues{
+        
+        width: 65%;
+        height: 90%;
+        border: 2px solid rgb(174, 12, 72);
+
+        .exitBtn{
+            margin-right: 10px;
+        }
+    }
+}
+form{
+    height: 80%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ 
+    label{
+        /* border: 2px solid green; */
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    input{
+        width: 90%;
+        height: 30px;
+        margin-bottom: 25px;
+    }
+    button{
+        padding: 10px;
+    }
+}
