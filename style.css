@@ -1,9 +1,20 @@
 body{
-    background-color: rgb(249, 199, 123);
+    background-color: rgb(189, 177, 158);
+    background-image: url('https://4kwallpapers.com/images/wallpapers/abstract-background-3840x2160-9776.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0; 
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1{
     text-align: center;
+    color: white;
+    text-shadow: 5px 10px 10px rgba(171, 214, 13, 0.5); 
 }
 
 .container{
@@ -13,7 +24,9 @@ h1{
     width: 60vw;
     height: 80vh;
     border: 2px dashed black;
-    background-color: rgb(251, 240, 194);
+    background-color: rgb(146, 180, 204);
+    background-image: url('https://i.gifer.com/embedded/download/RPO2.gif');
+    background-size: cover;
 
     h3{
         text-align: center;  
@@ -37,44 +50,112 @@ h1{
     .quesHeading{
         height: 15px;
         margin: auto;
-        font-size: 15px ;
+        font-size: 25px ;
         font-weight: bold;
         width: 50%;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         /* border: 2px solid black; */
     }
 
     .questionDiv{
-        height: 99%;
+        height: 90%;
         width: 99%;
         /* border: 2px solid purple; */
+        /* margin-top: 10px; */
         display: flex;
         justify-content: space-between;
+        /* color: aliceblue; */
+        /* align-items: center; */
+        /* margin-bottom: 10px; */
+        /* flex-direction: column; */
 
         .optionBtn{
             /* display: block; */
             width: 90%;
             margin-bottom: 5px;
         }
+    
     }
 
     .divForNames{
         width: 30%;
-        height: 40%;
-        border: 2px dotted rgb(35, 80, 177);
+        height: 50%;
+        /* border: 2px dotted rgb(35, 80, 177); */
         background-color: rgb(245, 224, 119);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
     }
     .divForQues{
-        
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
         width: 65%;
-        height: 90%;
-        border: 2px solid rgb(174, 12, 72);
+        height: 80%;
+        border-left: 2px solid rgb(174, 12, 72);
+
+        .question-text{
+            /* background-color: red; */
+           
+            height: auto;
+            padding: 10px 0;
+            border-radius: 5px;
+            background-color: rgb(248, 236, 158);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.8);
+            width: 90%;
+            /* border: 2px solid red; */
+        }
+        .optionBtn {
+            padding: 10px 5px;
+            background-color: rgb(247, 224, 195);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.8);
+            border: none;
+            transition: all .3s ease;
+            font-family: "Play", sans-serif;
+        }
+        
+        
+        .optionBtn:active{
+            background-color: rgb(202, 198, 198);
+        }
 
         .exitBtn{
-            margin-right: 10px;
+            /* margin-right: 10px; */
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.8);
+            margin: 10px 20px;
+            padding: 8px 20px;
         }
+       
     }
 }
+
+.bigDiv{
+    width: 80%;
+    height: 70%;
+    padding: 30px 20px;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    margin: auto;
+    background-color: aliceblue;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.8);
+
+    & .decisionName{
+        height: auto;
+        /* border: 2px solid black; */
+        color: red;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+        
+    }
+
+    & .exitBtn{
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+        margin: 10px 20px;
+        padding: 8px 20px;
+    }
+}
+
+
 form{
     height: 80%;
     /* border: 2px solid black; */
